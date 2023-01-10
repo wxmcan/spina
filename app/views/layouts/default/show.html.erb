@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required Meta Tags Always Come First -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Hello, world!</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Implementing Plugins -->
+  <link rel="stylesheet" href="../assets/hs-mega-menu.min.css">
+
+  <!-- CSS Unify Template -->
+  <link rel="stylesheet" href="../assets/theme.min.css">
+
+  <!-- JS Plugins Init. -->
+  <script>
+      (function() {
+          // INITIALIZATION OF MEGA MENU
+          // =======================================================
+          const megaMenu = new HSMegaMenu('.js-mega-menu', {
+              desktop: {
+                  position: 'left'
+              }
+          })
+
+          // INITIALIZATION OF HEADER
+          // =======================================================
+          new HSHeader('#header').init()
+      })()
+  </script>
+</head>
+
+<body>
+
+<%= render 'default/shared/header' %>
+
+<%= yield %>
+
+<!-- JS Global Compulsory -->
+<script src="../assets/vendor/bootstrap.bundle.min.js"></script>
+
+<!-- JS Implementing Plugins -->
+<script src="../assets/vendor/hs-mega-menu.min.js"></script>
+<script src="../assets/vendor/hs-header.min.js"></script>
+
+<!-- JS Unify -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!-- Hero -->
+<div class="bg-gradient-to-bottom-sm-light">
+  <div class="container content-space-t-2 content-space-t-lg-3">
+    <div class="row justify-content-lg-center mb-5">
+      <div class="col-lg-8">
+        <!-- Media -->
+        <div class="d-flex align-items-center mb-4">
+          <div class="flex-shrink-0">
+          </div>
+
+          <div class="flex-grow-1 ms-3">
+            <h6 class="mb-0">
+            </h6>
+            <span class="d-block fs-5 text-muted"><%= current_page.created_at %></span>
+          </div>
+        </div>
+        <!-- End Media -->
+
+        <div class="mb-6">
+          <h1 class="h2"><%= current_page.title %></h1>
+          <p class="lead"><%= content.html(:text) %></p>
+        </div>
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Row -->
+
+    <div class="row justify-content-lg-center">
+      <div class="col-lg-10">
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Row -->
+  </div>
+</div>
+<!-- End Hero -->
